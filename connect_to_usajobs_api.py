@@ -40,16 +40,18 @@ class UsaJobsApi:
 
 
 if __name__ == '__main__':
-    # keywords: list[str] = ['Software', 'Python', 'Java']
+    keywords: list[str] = ['Python', 'Java', 'Gosu']
 
-    # for k in keywords:
-    #     UsaJobsApi.get_jobs_by_keyword(k)
-    #     print('')
+    for k in keywords:
+        UsaJobsApi.get_jobs_by_keyword(k)
+        print('')
 
-    # TODO: Will likely load these end points from DuckDB or similar
+    # TODO: Will likely load these end points via DuckDB or similar
+    '''
     end_points: list[str] = ['academichonors', 'academiclevels', 'countries', 'documentations', 'ethnicities',
                              'hiringpaths', 'travelpercentages']
 
     for end_point in end_points:
         UsaJobsApi.get_results_by_endpoint(end_point)
         print('')
+    '''
