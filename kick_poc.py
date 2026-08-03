@@ -29,6 +29,7 @@ if __name__ == '__main__':
     channel_names: list[str] = str(os.getenv('KickChannels')).split('|')
 
     for channel_name in channel_names:
-        # KickPoc.get_channel_details(channel_name)
-        KickPoc.get_channel_clips(channel_name)
+        print(f'----- *[ {channel_name} ]* ------------------------------')
+        KickPoc.get_channel_details(channel_name)
+        # KickPoc.get_channel_clips(channel_name)
         print('')
